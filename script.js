@@ -36,6 +36,7 @@ function layoutBooks(data) {
         const img = document.createElement("img");
         img.setAttribute("class", "img");
         img.src = book.imageLink;
+        img.alt = 'programming books';
         bookCont.appendChild(img);
 
         //add author
