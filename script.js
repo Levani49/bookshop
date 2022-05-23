@@ -1,5 +1,5 @@
 const maincont = document.getElementById("mainCont");
-var deliveryArr = [1, 2, 3];
+var deliveryArr = [];
 // export { deliveryArr };
 //create title
 export default function addEl(deliveryArr) {
