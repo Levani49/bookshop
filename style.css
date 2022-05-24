@@ -23,21 +23,6 @@ body {
     color: white;
 }
 
-.deliveryPageLink {
-    float: right;
-    margin-top: 3px;
-    margin-right: 40px;
-    font-size: 1.3rem;
-    color: brown;
-    text-decoration: none;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-.deliveryPageLink:hover {
-    cursor: pointer;
-    color: rgb(204, 43, 43);
-}
-
 .booksCatalog {
     float: left;
     font-size: 1.5rem;
@@ -182,4 +167,10 @@ body {
     background-color: gray;
     margin-left: 30%;
     margin-top: -20%;
+}
+
+.cartDiv {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
 }

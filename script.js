@@ -1,26 +1,10 @@
 const maincont = document.getElementById("mainCont");
-var deliveryArr = [];
-// export { deliveryArr };
-//create title
-export default function addEl(deliveryArr) {
-    console.log(deliveryArr)
-}
-addEl();
 
 //add books catalog
 const booksCatalog = document.createElement('h3');
 booksCatalog.innerHTML = 'Books Catalog';
 booksCatalog.setAttribute('class', 'booksCatalog');
 maincont.append(booksCatalog);
-
-//add delivery page link
-const deliveryPageLink = document.createElement('a');
-deliveryPageLink.innerHTML = 'Delivery Page';
-deliveryPageLink.href = './pages/index.html';
-deliveryPageLink.target = '_blank';
-deliveryPageLink.setAttribute('class', 'deliveryPageLink');
-maincont.append(deliveryPageLink);
-
 
 const mainTitle = document.createElement("h1");
 mainTitle.innerHTML = "Books are a uniquely portable magic.” – Stephen King";
@@ -35,9 +19,6 @@ maincont.append(books);
 async function getBooks() {
     const response = await fetch("./books.json");
     var data = await response.json();
-    // console.log(data);
-    // deliveryArr.push(data[0]);
-    // console.log(deliveryArr);
     await layoutBooks(data);
 }
 
@@ -108,9 +89,18 @@ function layoutBooks(data) {
                 showButton.classList.remove('hide');
             })
         });
-        // deliveryArr.push(book.title);
+
+        addButton.addEventListener('click', () => {
+            var cartDiv = document.createElement('div');
+            cartDiv.setAttribute('class', 'cartDiv');
+            var write = document.createElement('h4');
+            write.innerHTML = book.title + '<br>' + '<br>' + book.author + '<br>' + '<br>' + book.price
+            cartDiv.appendChild(write)
+            maincont.append(cartDiv);
+            addButton.disabled = true;
+        })
     });
+
 }
 
 getBooks();
-// maincont.append(firstDiv);
