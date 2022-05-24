@@ -173,4 +173,10 @@ body {
     width: 200px;
     height: 200px;
     border: 2px solid white;
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.cartDiv h4 {
+    color: green;
 }
