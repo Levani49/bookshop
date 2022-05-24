@@ -94,7 +94,7 @@ function layoutBooks(data) {
             var cartDiv = document.createElement('div');
             cartDiv.setAttribute('class', 'cartDiv');
             var write = document.createElement('h4');
-            write.innerHTML = book.title + '<br>' + '<br>' + book.author + '<br>' + '<br>' + book.price
+            write.innerHTML = 'added book:' + '<br>' + '<br>' + 'title: ' + book.title + '<br>' + '<br>' + 'author: ' + book.author + '<br>' + '<br>' + 'price: ' + book.price
             cartDiv.appendChild(write)
             maincont.append(cartDiv);
             addButton.disabled = true;
