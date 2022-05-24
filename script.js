@@ -6,6 +6,22 @@ export default function addEl(deliveryArr) {
     console.log(deliveryArr)
 }
 addEl();
+
+//add books catalog
+const booksCatalog = document.createElement('h3');
+booksCatalog.innerHTML = 'Books Catalog';
+booksCatalog.setAttribute('class', 'booksCatalog');
+maincont.append(booksCatalog);
+
+//add delivery page link
+const deliveryPageLink = document.createElement('a');
+deliveryPageLink.innerHTML = 'Delivery Page';
+deliveryPageLink.href = './pages/index.html';
+deliveryPageLink.target = '_blank';
+deliveryPageLink.setAttribute('class', 'deliveryPageLink');
+maincont.append(deliveryPageLink);
+
+
 const mainTitle = document.createElement("h1");
 mainTitle.innerHTML = "Books are a uniquely portable magic.” – Stephen King";
 mainTitle.setAttribute("class", "mainTitle");

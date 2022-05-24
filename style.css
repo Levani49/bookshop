@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 body {
     background-image: linear-gradient(to right, #2f2e2e, #434343);
 }
@@ -20,6 +21,31 @@ body {
     font-size: 1.7rem;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: white;
+}
+
+.deliveryPageLink {
+    float: right;
+    margin-top: 3px;
+    margin-right: 40px;
+    font-size: 1.3rem;
+    color: brown;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.deliveryPageLink:hover {
+    cursor: pointer;
+    color: rgb(204, 43, 43);
+}
+
+.booksCatalog {
+    float: left;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ebd0d041;
+    margin-top: 3px;
+    margin-left: 40px;
 }
 
 .books-block {
